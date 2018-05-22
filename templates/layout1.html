@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+						"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>my first web page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<!-- 
+			Old JavaScript examples may use a type attribute: <script type="text/javascript">.
+			The type attribute is not required. JavaScript is the default scripting language in HTML.
+		-->
+		<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/	bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			{% block style %}{% endblock %}
+		</style>
+		
+	</head>
+
+<body>
+	{% block body %}{% endblock %}
+</body>
+</html>
