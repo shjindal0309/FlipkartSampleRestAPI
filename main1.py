@@ -29,7 +29,7 @@ def result():
 		with open('data.json','w') as json_file:
 			json.dump(json_data, json_file, sort_keys=True, indent=4)
 
-		return render_template("result.html",json=json_data)
+		return render_template("result1.html",json=json_data)
 
 	# elif(request.method=="PUT"):
 	# 	print("hi")
@@ -45,13 +45,13 @@ def result():
 	elif(request.method=="GET"):
 		_id = request.args.get('id','')
 		if(not _id):
-			return render_template("result.html",json=json_data)
+			return render_template("result1.html",json=json_data)
 		else:
 			return_list=[]
 			for x in json_data['books']:
 				if(int(_id) == x['id']):
 					return_list.append(x)
-			return render_template("result.html",json=return_list)
+			return render_template("result1.html",json=return_list)
 
 	# if(request.method=="PUT" and request.form['request_type']=='PUT'):
 
